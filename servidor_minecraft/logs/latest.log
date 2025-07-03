@@ -1,38 +1,41 @@
-[03Jul2025 18:34:55.571] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_server, nogui]
-[03Jul2025 18:34:55.573] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Ubuntu OpenJDK 64-Bit Server VM 21.0.7+6-Ubuntu-0ubuntu124.04
-[03Jul2025 18:34:55.573] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.7 by Ubuntu; OS Linux arch amd64 version 6.8.0-1027-azure
-[03Jul2025 18:34:55.646] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_server
-[03Jul2025 18:34:55.739] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///workspaces/UnitedBlocksSMP-1/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.7/mixin-0.8.7.jar!/ Service=ModLauncher Env=SERVER
-[03Jul2025 18:34:55.923] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[03Jul2025 18:34:56.712] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_server' with arguments [nogui]
-[03Jul2025 18:35:01.455] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 54.1.0, for MC 1.21.4 with MCP 20241203.143248
-[03Jul2025 18:35:01.456] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v54.1.0 Initialized
-[03Jul2025 18:35:01.468] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[03Jul2025 18:35:01.871] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[03Jul2025 18:35:02.358] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 54.1.0 Target: null
-[03Jul2025 18:35:03.059] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[03Jul2025 18:35:03.082] [main/ERROR] [net.minecraft.server.Main/FATAL]: Failed to start the minecraft server
-net.minecraft.util.DirectoryLock$LockException: /workspaces/UnitedBlocksSMP-1/servidor_minecraft/./world/session.lock: already locked (possibly by other Minecraft instance?)
-	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:95) ~[forge-1.21.4-54.1.0-server.jar:?]
-	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.DirectoryLock.create(DirectoryLock.java:41) ~[forge-1.21.4-54.1.0-server.jar:?]
-	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:417) ~[forge-1.21.4-54.1.0-server.jar:?]
-	at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:350) ~[forge-1.21.4-54.1.0-server.jar:?]
-	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.Main.main(Main.java:155) ~[forge-1.21.4-54.1.0-server.jar:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.1.0.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.1.0.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
-	at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
-	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
-	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at net.minecraftforge.bootstrap.shim.Main.main(Main.java:101) [forge-1.21.4-54.1.0-shim.jar:2.1.8]
+[03Jul2025 18:38:55.731] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_server, nogui]
+[03Jul2025 18:38:55.733] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Ubuntu OpenJDK 64-Bit Server VM 21.0.7+6-Ubuntu-0ubuntu124.04
+[03Jul2025 18:38:55.734] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.7 by Ubuntu; OS Linux arch amd64 version 6.8.0-1027-azure
+[03Jul2025 18:38:55.823] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_server
+[03Jul2025 18:38:55.910] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///workspaces/UnitedBlocksSMP-1/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.7/mixin-0.8.7.jar!/ Service=ModLauncher Env=SERVER
+[03Jul2025 18:38:56.082] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[03Jul2025 18:38:56.849] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_server' with arguments [nogui]
+[03Jul2025 18:39:01.662] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 54.1.0, for MC 1.21.4 with MCP 20241203.143248
+[03Jul2025 18:39:01.662] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v54.1.0 Initialized
+[03Jul2025 18:39:01.679] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[03Jul2025 18:39:02.105] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[03Jul2025 18:39:02.593] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 54.1.0 Target: null
+[03Jul2025 18:39:03.042] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[03Jul2025 18:39:05.276] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1370 recipes
+[03Jul2025 18:39:05.295] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1481 advancements
+[03Jul2025 18:39:05.435] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.21.4
+[03Jul2025 18:39:05.437] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[03Jul2025 18:39:05.438] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[03Jul2025 18:39:05.438] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[03Jul2025 18:39:05.551] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[03Jul2025 18:39:05.601] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[03Jul2025 18:39:05.643] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** FAILED TO BIND TO PORT!
+[03Jul2025 18:39:05.644] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The exception was: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+[03Jul2025 18:39:05.644] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: Perhaps a server is already running on that port?
+[03Jul2025 18:39:05.645] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: Encountered an unexpected exception
+java.lang.IllegalStateException: Failed to initialize server
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:680) ~[forge-1.21.4-54.1.0-server.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:278) ~[forge-1.21.4-54.1.0-server.jar!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[03Jul2025 18:39:05.691] [Server thread/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID 0cba68a9-269e-401b-beff-57f82826aaf3
+[03Jul2025 18:39:05.691] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: This crash report has been saved to: /workspaces/UnitedBlocksSMP-1/servidor_minecraft/crash-reports/crash-2025-07-03_18.39.05-server.txt
+[03Jul2025 18:39:05.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[03Jul2025 18:39:05.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[03Jul2025 18:39:05.693] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: Exception stopping the server
+java.lang.NullPointerException: Cannot invoke "net.minecraft.server.level.ServerLevel.getWorldBorder()" because "serverlevel2" is null
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.MinecraftServer.saveAllChunks(MinecraftServer.java:566) ~[forge-1.21.4-54.1.0-server.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:631) ~[forge-1.21.4-54.1.0-server.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:549) ~[forge-1.21.4-54.1.0-server.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:757) ~[forge-1.21.4-54.1.0-server.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:278) ~[forge-1.21.4-54.1.0-server.jar!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
